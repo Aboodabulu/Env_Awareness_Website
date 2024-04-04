@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Login Popup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Login Button -->
+<button id="loginTriggerButton" class="login-trigger-button">Log In</button>
+
+<!-- Sign Up Button -->
+<button id="signupTriggerButton" class="trigger-button">Sign Up</button>
+
+<!-- Login Modal -->
+<div id="loginPopup" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>LOGIN</h2>
+    <form id="loginForm">
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-container">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="footer">
+        <a href="#" class="forgot-password">Forgot Password</a>
+        <button type="submit" class="login-button">LOGIN</button>
+        <div class="footer">
+            <span>New here? <a href="#" id="switchToSignup">Sign Up</a></span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div id="signupPopup" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>SIGN UP</h2>
+      <form id="signupForm">
+        <!-- Email Field -->
+        <div class="input-container">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" name="email" required>
+        </div>
+        <!-- Password Field -->
+        <div class="input-container">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" name="password" required>
+        </div>
+        <!-- ZIP Code Field -->
+        <div class="input-container">
+          <label for="signupZip">ZIP Code</label>
+          <input type="text" id="signupZip" name="zip" required>
+        </div>
+        <!-- Sign Up Button -->
+        <button type="submit" class="signup-button">SIGN UP</button>
+        <!-- Already have an account? -->
+        <p class="login-link">Already a user? <a href="#" id="switchToLogin">LOGIN</a></p>
+      </form>
+    </div>
+  </div>
+  
+<script src="script.js"></script>
+</body>
+</html>
