@@ -1,0 +1,43 @@
+/* CSS */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  background-color: #f4f4f4; /* Adjust the color as needed */
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  padding: 20px;
+  border: none;
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.menu-item:hover, .menu-item.active {
+  background-color: #ddeeff; /* Adjust hover/active color as needed */
+}
+
+.content {
+  margin-left: 25%; /* Same as sidebar width */
+  padding: 20px;
+}
+
+.content-section {
+  display: none; /* Hide content sections by default */
+}
+
+.content-section.active {
+  display: block; /* Show active content section */
+}

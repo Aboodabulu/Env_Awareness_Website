@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Split Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered-content">
+    <div class="menu-item" onclick="changeContent('instructions')">Instructions</div>
+    <div class="menu-item" onclick="changeContent('nature')">Nature</div>
+    <div class="menu-item" onclick="changeContent('home-energy')">Home Energy</div>
+    <div class="menu-item" onclick="changeContent('food')">Food</div>
+    <div class="menu-item" onclick="changeContent('plastic')">Plastic, Paper, Water, Waste, and Stuff</div>
+    <div class="menu-item" onclick="changeContent('transport')">Transportation and Travel</div>
+    <div class="menu-item" onclick="changeContent('learn')">Learn, Connect, Advocate, and Volunteer</div>
+  </div>
+</div>
+
+<div class="split right">
+    <div id="content-area">
+      <!-- Default content or the content for 'Instructions' can go here -->
+      <h1>Instructions</h1>
+        <p>Many people care deeply about the Earth but they might not be doing as much as they could because they're not sure which actions are the most important. They might feel overwhelmed or powerless, like their efforts won’t make a difference. And they might not see other people around them taking action.</p>
+        
+        <p>The Earth is My Home Initiative aims to help people take small meaningful actions that can lead to bigger ones. We do this by researching for you which actions are the most helpful, showing you that more and more people are doing these things, creating conversation starters, and giving you support and thanks for your efforts to help nature.</p>
+        
+        <p>Thank you for completing our checklist of actions that help the Earth! Many of the actions may be new to you. That's okay! We hope you will learn some helpful ideas along the way.</p>
+        
+        <p>Let’s get started!</p>
+        <ol>
+            <li>For the actions that you do most of the time, check the square “I do this now”</li>
+            <li>If you don’t do an action now, but would like to start, check the square “I plan to do this”</li>
+            <li>If you don’t do an action now and are not planning to start, leave the squares blank.</li>
+            <li>To learn “how” and “why” for a checklist action, click on the little <img src='bee.png' alt="Bee" class="inline-image">.</li>
+            <li>Make a plan with your friends and family for how to support each other in your new actions.</li>
+            <li>Spread the word! Share this checklist with at least 2 new people... let’s make these actions commonplace!</li>
+        </ol>
+        
+        <p>All participants will be sent a personal thank you and an Earth is My Home Award by email based on their checklist scores. We will also send you our “NEW ECO-ACTIONS LIST” based on your stars. Then, in a few weeks, we will send you another email to see how you are doing with the actions on your list. You will be able to share your experiences, complete the checklist again, and earn a new award.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
