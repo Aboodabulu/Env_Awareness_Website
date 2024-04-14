@@ -1,0 +1,219 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    font-family: 'Urbanist';
+}
+
+.top-bar {
+    background-image: url('home-images/blue_bar.png');
+    padding: 0px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-header {
+    background-image: url('home-images/paper_bar.png');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+    font-weight: 800;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 24px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #0B2B38; 
+}
+
+.auth-button {
+    padding: 8px 20px;
+    width: 180px;
+    height: 30px;
+    background-color: #CBE5A8;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: none;
+    margin-bottom: none;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.bee-path{
+    background-image: url('./home-images/bee_path.png');
+}
+
+.bee{
+    background-image: url('./home-images/flat_bee.png');
+    width: 11rem;
+    position: absolute;
+    right: 0;
+    top: 114px;
+}
+
+.image{
+   position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.image::before {
+    content: url('./home-images/bee_path.png');
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 420px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: rotate(-15deg);
+}
+.image::after {
+    content: url('./home-images/flat_bee.png');
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: 1085px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: rotate(-15deg);
+}
+.image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 92%; */
+    margin: 1.1rem;
+    /* height: 40vh; */
+    /* border: solid; */
+    max-width: 1500px;
+}
+.hero-text {
+    margin-top: 100px;
+    flex-basis: 50%; 
+    padding: 70px; 
+    text-align: center;
+    color: #255564;
+}
+
+.hero-text h1 {
+    color: #333;
+    margin-bottom: 20px;
+    color: #255564;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    height: 300%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.hero-text button {
+    background-color: #255564;
+    width: 283px;
+    height: 68px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px; 
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.options-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 10px; 
+    background-color: #f0f0f0; 
+}
+
+.option {
+    background-color: #CBE5A8; 
+    color: #1d3557; 
+    text-align: center;
+    padding: 40px; 
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto; 
+    min-height: 200px; 
+}
+
+span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.option strong {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#map {
+    height: 400px; 
+    margin-top: 100px;
+    margin-bottom: none;
+    width: 100%;
+    height: auto;
+}
+
+.bottom-img {
+    width: 100%;
+    display: block;
+}
+
+.site-footer {
+    background-image: url('home-images/paper_bar.png');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    padding: 10px 20px;
+    margin-bottom: none;
+}
+
+.footer-content {
+    background-image: url('home-images/blue_bar.png');
+    padding: 0px 10px;
+    display: flex;
+    justify-content: flex-end;
+}

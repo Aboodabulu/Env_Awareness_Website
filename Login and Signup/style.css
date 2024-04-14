@@ -1,4 +1,9 @@
 /* Styles for both the Log In and Sign Up buttons */
+body, html {
+    background-color: #f0f0f0;
+    font-family: 'Urbanist';
+}
+
 .trigger-button {
     padding: 10px 20px;
     font-size: 16px;
